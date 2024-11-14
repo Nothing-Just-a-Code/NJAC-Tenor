@@ -1,0 +1,174 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NJAC Tenor
+</name>
+</assembly>
+<members>
+<member name="M:NJACTenor.Featured.GetFeaturedGIFs(System.Int32)">
+ <summary>
+ Get Featured Images.
+ </summary>
+ <param name="limit">Search Items Limit. (Default is 10). Do Not Use Higher Limit if you Don't Need to. It May Takes Slightly Longer Time to Get Results.</param>
+ <returns><see cref="T:NJACTenor.ImageSearchReader"/> An NJAC Class Which Contains the Searched Items and Informations.</returns>
+</member>
+<member name="M:NJACTenor.Featured.GetFeaturedStickers(System.Int32,NJACTenor.TenorClient.StickerFilter)">
+ <summary>
+ Get Featured Stickers.
+ </summary>
+ <param name="limit">Search Items Limit. (Default is 10). Do Not Use Higher Limit if you Don't Need to. It May Takes Slightly Longer Time to Get Results.</param>
+ <param name="stickerfilter">Select Which Type of Stickers You Want to Search. 'Static' or 'Animated' or 'Both'
+ <list type="bullet"><item><see cref="F:NJACTenor.TenorClient.StickerFilter.AnimatedAndStatic"/> - Search Both Type of Stickers. (Animated and Static).</item>
+ <item><see cref="F:NJACTenor.TenorClient.StickerFilter.AnimatedOnly"/> - Search Only Animated Stickers.</item>
+ <item><see cref="F:NJACTenor.TenorClient.StickerFilter.StaticOnly"/> - Search Only Static Stickers.</item></list></param>
+ <returns><see cref="T:NJACTenor.StickerSearchReader"/> An NJAC Class Which Contains the Searched Items and Informations.</returns>
+</member>
+<member name="M:NJACTenor.Featured.GoNextPage(NJACTenor.NextPageToken)">
+ <summary>
+ Go to the Next Page (If any)
+ </summary>
+ <param name="nextpagetoken">Use <see cref="T:NJACTenor.NextPageToken"/> Which Contains Values like Token and Query To Go to the Next Page.</param>
+ <returns>Return as <see cref="T:System.Object"/>. It Can be <see cref="T:NJACTenor.ImageSearchReader"/> or <see cref="T:NJACTenor.StickerSearchReader"/> Depend on Your Search Query.</returns>
+</member>
+<member name="M:NJACTenor.Search.SearchGIF(System.String,System.Int32)">
+ <summary>
+ Search GIF Images.
+ </summary>
+ <param name="query">Search Query.</param>
+ <param name="limit">Search Items Limit. (Default Limit is 10)</param>
+ <returns>Returns <see cref="T:NJACTenor.ImageSearchReader"/> Which Contains Searched Images Items.</returns>
+</member>
+<member name="M:NJACTenor.Search.SearchSticker(System.String,System.Int32,NJACTenor.TenorClient.StickerFilter)">
+ <summary>
+ Search Sticker.
+ </summary>
+ <param name="query">Search Query.</param>
+ <param name="limit">Search Items Limit. (Default Limit is 10)</param>
+ <param name="stickerfilter">Select Which Type of Stickers You Want to Search. 'Static' or 'Animated' or 'Both'
+ <list type="bullet"><item><see cref="F:NJACTenor.TenorClient.StickerFilter.AnimatedAndStatic"/> - Search Both Type of Stickers. (Animated and Static).</item>
+ <item><see cref="F:NJACTenor.TenorClient.StickerFilter.AnimatedOnly"/> - Search Only Animated Stickers.</item>
+ <item><see cref="F:NJACTenor.TenorClient.StickerFilter.StaticOnly"/> - Search Only Static Stickers.</item></list></param>
+ <returns><see cref="T:NJACTenor.StickerSearchReader"/> An NJAC Class Which Contains the Searched Items and Informations.</returns>
+</member>
+<member name="M:NJACTenor.Search.GoNextPage(NJACTenor.NextPageToken)">
+ <summary>
+ Go to the Next Page (If any)
+ </summary>
+ <param name="nextpagetoken">Use <see cref="T:NJACTenor.NextPageToken"/> Which Contains Values like Token and Query To Go to the Next Page.</param>
+ <returns>Return as <see cref="T:System.Object"/>. It Can be <see cref="T:NJACTenor.ImageSearchReader"/> or <see cref="T:NJACTenor.StickerSearchReader"/> Depend on Your Search Query.</returns>
+</member>
+<member name="P:NJACTenor.ImageItem.PageURL">
+ <summary>
+ Get the Tenor Web Page URL of this Image.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:NJACTenor.ImageSearchReader.Images">
+ <summary>
+ A Collection of Searched Images.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:NJACTenor.ImageSearchReader.NextPageToken">
+ <summary>
+ Token to Open the Next Page of Searched Images.
+ </summary>
+ <remarks>Token will be <c>null</c> if there is no more page.</remarks>
+ <returns></returns>
+</member>
+<member name="P:NJACTenor.StickerSearchReader.Stickers">
+ <summary>
+ A Collection of Searched Stickers.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:NJACTenor.StickerSearchReader.NextPageToken">
+ <summary>
+ Token to Open the Next Page of Searched Images.
+ </summary>
+ <remarks>Token will be <c>null</c> if there is no more page.</remarks>
+ <returns></returns>
+</member>
+<member name="T:NJACTenor.TenorClient">
+ <summary>
+ NJAC Tenor Client
+ </summary>
+</member>
+<member name="P:NJACTenor.TenorClient.GIFSearch">
+ <summary>
+ A Class to Search GIF Images from Tenor.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:NJACTenor.TenorClient.Featured">
+ <summary>
+ A Class to Get Featured Images.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:NJACTenor.TenorClient.APIKey">
+ <summary>
+ Your Tenor API Key.
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:NJACTenor.TenorClient.BaseUrl">
+ <summary>
+ Base URL for all Tenor HTTP Requests.
+ </summary>
+ <remarks>https://tenor.googleapis.com/v2/</remarks>
+ <returns></returns>
+</member>
+<member name="P:NJACTenor.TenorClient.ClientKey">
+ <summary>
+ Your Tenor Client Key
+ </summary>
+<example>You can use any value if you don't have any Client Key.</example> 
+ <returns></returns>
+</member>
+<member name="P:NJACTenor.TenorClient.Locale">
+ <summary>
+ Locale (Default is en_US). Don't modify it if you don't want to change Locale from English to another Language.
+ ''' </summary>
+ <returns></returns>
+</member>
+<member name="P:NJACTenor.TenorClient.UserAgent">
+ <summary>
+ User Agent (Don't change it if you don't know need to.)
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NJACTenor.TenorClient.#ctor(System.String)">
+ <summary>
+ Create a new instance by using Tenor API Key.
+ </summary>
+ <param name="API">Your Tenor API Key</param>
+</member>
+<member name="F:NJACTenor.TenorClient.CategoryType.Trending">
+ <summary>
+ Get the 'Trending' Category of GIF Images.
+ </summary>
+</member>
+<member name="F:NJACTenor.TenorClient.CategoryType.Featured">
+ <summary>
+ Get the 'Featured' Category of GIF Images.
+ </summary>
+</member>
+<member name="M:NJACTenor.TenorClient.GetCategories(NJACTenor.TenorClient.CategoryType)">
+ <summary>
+ Get Categories of Tenor Images.
+ </summary>
+ <param name="categorytype">Select of which type the category you need to grab.</param>
+ <returns></returns>
+</member>
+<member name="M:NJACTenor.TenorClient.AutoCompleteSuggestions(System.String,System.Int32)">
+ <summary>
+ Get the AutoComplete Suggestion. (Helpful if you want to make your application's search system more easy)
+ </summary>
+ <param name="term">A Short Text to Get the List of AutoComplete Search Items.</param><example>If you want to get the list of all search items starts with 'good' like 'good day' or 'good morning' then type 'good' in Term.</example>
+ <param name="limit">Search Items Limit. (Default is 10). Do not use Higher Limit if You Don't Need to.</param>
+ <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1"/> which contains the AutoComplete Suggestions.</returns>
+</member>
+</members>
+</doc>

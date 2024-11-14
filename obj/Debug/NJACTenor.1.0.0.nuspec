@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NJACTenor</id>
+    <version>1.0.0</version>
+    <title>NJAC_Tenor</title>
+    <authors>NJAC Tenor</authors>
+    <icon>main-logo.png</icon>
+    <description>A Very Simple and Easy to Use UnOfficial Tenor Library for .NET Application.</description>
+    <copyright>NJAC</copyright>
+    <tags>tenor</tags>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/net8.0/main-logo.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Kabir\source\repos\NJAC Tenor\NJAC Tenor\bin\Debug\net8.0\NJAC Tenor.dll" target="lib\net8.0\NJAC Tenor.dll" />
+    <file src="C:\Users\Kabir\source\repos\NJAC Tenor\NJAC Tenor\bin\Debug\net8.0\NJAC Tenor.xml" target="lib\net8.0\NJAC Tenor.xml" />
+    <file src="C:\Users\Kabir\source\repos\NJAC Tenor\NJAC Tenor\main-logo.ico" target="content\main-logo.ico" />
+    <file src="C:\Users\Kabir\source\repos\NJAC Tenor\NJAC Tenor\main-logo.ico" target="contentFiles\any\net8.0\main-logo.ico" />
+    <file src="C:\Users\Kabir\Desktop\main-logo.png" target="\main-logo.png" />
+  </files>
+</package>

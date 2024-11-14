@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>NJACTenor</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <ApplicationIcon>main-logo.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>NJAC_Tenor</Title>
+    <Copyright>NJAC</Copyright>
+    <PackageIcon>main-logo.png</PackageIcon>
+    <PackageTags>tenor</PackageTags>
+    <Description>A Very Simple and Easy to Use UnOfficial Tenor Library for .NET Application.</Description>
+    <PackageId>NJACTenor</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="main-logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Desktop\main-logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
