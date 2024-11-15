@@ -85,4 +85,5 @@ Dim images = Await client.GIFSearch.SearchGIF("hello")
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-
+## Support My Work
+[![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=njac&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/njac)
