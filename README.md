@@ -39,7 +39,7 @@ or
   
 ---
 
-## 7. **Usage**
+## Usage
 
 - Create a New Client
 ```vb.net
@@ -81,4 +81,8 @@ Dim images = Await client.GIFSearch.SearchGIF("hello")
       'Dim getimages = Await item.GetItems() - Get all images inside that Category.
    Next
  ```
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
